@@ -5,10 +5,13 @@ def print_matrix(matrix: list):
         print()
 
 def transpose(matrix: list):
+    
     matrix_length = len(matrix)
 
     for row in range(matrix_length):
+
         for column in range(row, matrix_length):
+
             number = matrix[row][column]
             matrix[row][column] = matrix[column][row]
             matrix[column][row] = number
